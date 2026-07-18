@@ -86,7 +86,8 @@ function App() {
 
         <div className="addTodos">
 
-          <h2 className='text-xl'>Add a Todo</h2>
+          <h2 className='text-lg font-semibold'>Add a Todo</h2>
+          <br/>
           <div className='flex flex-col md:flex-row gap-3' >
             <input onChange={handleOnChange}
               value={todo}
@@ -100,9 +101,9 @@ function App() {
             </button>
           </div>
 
+<br/>
 
-
-          <h1 className='text-xl'>Your Todos
+          <h1 className='text-lg font-semibold'>Your Todos
           </h1>
 
           {todos.map(item => {
