@@ -88,7 +88,7 @@ function App() {
 
           <h2 className='text-lg font-semibold'>Add a Todo</h2>
       
-          <div className='flex flex-col md:flex-row gap-3 mt-5' >
+          <div className='flex flex-col md:flex-row gap-3 mt-3' >
             <input onChange={handleOnChange}
               value={todo}
               className='flex-1 border-2 rounded w-full px-3 h-10'
