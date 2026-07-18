@@ -80,23 +80,20 @@ function App() {
 
   return (
     <>
-      <Navbar
-        home="Home"
-        tasks="Your tasks"
-      />
-
+      <Navbar/>
 
       <div className="container w-full md:max-w-[80%] lg:max-w-4xl bg-violet-200 my-5 rounded-md p-4 md:p-10 min-h-[85vh] mx-auto">
 
         <div className="addTodos">
 
-          <h2 className='text-lg font-bold'>Add a Todo</h2>
+          <h2 className='text-xl'>Add a Todo</h2>
           <div className='flex flex-col md:flex-row gap-3' >
             <input onChange={handleOnChange}
               value={todo}
               className='flex-1 border-2 rounded w-full px-3 h-10'
               type='text'
-              placeholder='e.g; drink 5 liters of water' />
+              placeholder='type something'
+              />
 
             <button onClick={handleAdd}
               className=' transition-all hover:scale-105 active:scale-90 bg-violet-950 w-20 cursor-pointer rounded-md text-white h-10'> Add
@@ -105,7 +102,7 @@ function App() {
 
 
 
-          <h1 className='text-lg font-bold'>Your Todos
+          <h1 className='text-xl'>Your Todos
           </h1>
 
           {todos.map(item => {
